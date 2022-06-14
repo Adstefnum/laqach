@@ -1,0 +1,140 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {
+				"@_33": {
+					"entryPoint": null,
+					"id": 33,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "60a060405234801561001057600080fd5b503373ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff1660601b8152505060805160601c6101176100656000396000605d01526101176000f3fe60806040526004361060295760003560e01c80634c0aac9a14603d578063ca8bcec9146051576035565b3660355760336059565b005b603b6059565b005b348015604857600080fd5b50604f605b565b005b60576059565b005b565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161460df576040517f30cd747100000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b56fea2646970667358221220a6d61db023f35ecfeda49ca1a8738221e7bef90b7f842f043a1de198058c179d64736f6c63430008070033",
+			"opcodes": "PUSH1 0xA0 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLER PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND PUSH1 0x80 DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND PUSH1 0x60 SHL DUP2 MSTORE POP POP PUSH1 0x80 MLOAD PUSH1 0x60 SHR PUSH2 0x117 PUSH2 0x65 PUSH1 0x0 CODECOPY PUSH1 0x0 PUSH1 0x5D ADD MSTORE PUSH2 0x117 PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x29 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x4C0AAC9A EQ PUSH1 0x3D JUMPI DUP1 PUSH4 0xCA8BCEC9 EQ PUSH1 0x51 JUMPI PUSH1 0x35 JUMP JUMPDEST CALLDATASIZE PUSH1 0x35 JUMPI PUSH1 0x33 PUSH1 0x59 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x3B PUSH1 0x59 JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x48 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4F PUSH1 0x5B JUMP JUMPDEST STOP JUMPDEST PUSH1 0x57 PUSH1 0x59 JUMP JUMPDEST STOP JUMPDEST JUMP JUMPDEST PUSH32 0x0 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND CALLER PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND EQ PUSH1 0xDF JUMPI PUSH1 0x40 MLOAD PUSH32 0x30CD747100000000000000000000000000000000000000000000000000000000 DUP2 MSTORE PUSH1 0x4 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xA6 0xD6 SAR 0xB0 0x23 RETURN 0x5E 0xCF 0xED LOG4 SWAP13 LOG1 0xA8 PUSH20 0x8221E7BEF90B7F842F043A1DE198058C179D6473 PUSH16 0x6C634300080700330000000000000000 ",
+			"sourceMap": "77:662:0:-:0;;;380:48;;;;;;;;;;411:10;403:18;;;;;;;;;;;;77:662;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {
+				"@ReceiveFunds_37": {
+					"entryPoint": 89,
+					"id": 37,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				},
+				"@WithdrawFunds_43": {
+					"entryPoint": 91,
+					"id": 43,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				},
+				"@_50": {
+					"entryPoint": null,
+					"id": 50,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				},
+				"@_57": {
+					"entryPoint": null,
+					"id": 57,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"immutableReferences": {
+				"20": [
+					{
+						"length": 32,
+						"start": 93
+					}
+				]
+			},
+			"linkReferences": {},
+			"object": "60806040526004361060295760003560e01c80634c0aac9a14603d578063ca8bcec9146051576035565b3660355760336059565b005b603b6059565b005b348015604857600080fd5b50604f605b565b005b60576059565b005b565b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161460df576040517f30cd747100000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b56fea2646970667358221220a6d61db023f35ecfeda49ca1a8738221e7bef90b7f842f043a1de198058c179d64736f6c63430008070033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x29 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x4C0AAC9A EQ PUSH1 0x3D JUMPI DUP1 PUSH4 0xCA8BCEC9 EQ PUSH1 0x51 JUMPI PUSH1 0x35 JUMP JUMPDEST CALLDATASIZE PUSH1 0x35 JUMPI PUSH1 0x33 PUSH1 0x59 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x3B PUSH1 0x59 JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x48 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4F PUSH1 0x5B JUMP JUMPDEST STOP JUMPDEST PUSH1 0x57 PUSH1 0x59 JUMP JUMPDEST STOP JUMPDEST JUMP JUMPDEST PUSH32 0x0 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND CALLER PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND EQ PUSH1 0xDF JUMPI PUSH1 0x40 MLOAD PUSH32 0x30CD747100000000000000000000000000000000000000000000000000000000 DUP2 MSTORE PUSH1 0x4 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 REVERT JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xA6 0xD6 SAR 0xB0 0x23 RETURN 0x5E 0xCF 0xED LOG4 SWAP13 LOG1 0xA8 PUSH20 0x8221E7BEF90B7F842F043A1DE198058C179D6473 PUSH16 0x6C634300080700330000000000000000 ",
+			"sourceMap": "77:662:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;563:14;:12;:14::i;:::-;77:662;;626:14;:12;:14::i;:::-;77:662;479:43;;;;;;;;;;;;;:::i;:::-;;434:40;;;:::i;:::-;;;:::o;479:43::-;695:5;683:17;;:10;:17;;;680:39;;709:10;;;;;;;;;;;;;;680:39;479:43::o"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "55800",
+				"executionCost": "infinite",
+				"totalCost": "infinite"
+			},
+			"external": {
+				"": "131",
+				"ReceiveFunds()": "120",
+				"WithdrawFunds()": "infinite"
+			}
+		},
+		"methodIdentifiers": {
+			"ReceiveFunds()": "ca8bcec9",
+			"WithdrawFunds()": "4c0aac9a"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		},
+		{
+			"inputs": [],
+			"name": "NotOwner",
+			"type": "error"
+		},
+		{
+			"stateMutability": "payable",
+			"type": "fallback"
+		},
+		{
+			"inputs": [],
+			"name": "ReceiveFunds",
+			"outputs": [],
+			"stateMutability": "payable",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "WithdrawFunds",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"stateMutability": "payable",
+			"type": "receive"
+		}
+	]
+}
