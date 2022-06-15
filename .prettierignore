@@ -1,4 +1,9 @@
 node_modules
+package.json
+.*
+img
+.env
+README.md
 artifacts
 cache
 coverage*
