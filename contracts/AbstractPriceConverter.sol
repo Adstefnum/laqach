@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.7;
 
-//add chainlink datafeeds
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 contract AbstractPriceConverter{
     //an interface might be needed
     function GetCryptoCurrencyPrice() public virtual {}
