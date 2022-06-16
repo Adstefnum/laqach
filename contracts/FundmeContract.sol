@@ -3,6 +3,9 @@
 pragma solidity ^0.8.7;
 
 
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+import "./EthToUSDConverter.sol";
+
  error NotOwner();
  error InsufficientFundAmount();
  error InsufficientBalance();
@@ -11,13 +14,15 @@ contract FundMe{
    uint256 constant public MinimumUSDFundAmount = 50*10e18;
    uint256 constant private MinimumWithdrawalBalance = 50*10e18;
    address immutable private Owner;
+   AggregatorV3Interface private PriceFeed;
 
    
    mapping(address=>uint256) AddressToFundedAmount;
    address[] Funders;
    
-    constructor(){
+    constructor(address PriceFeedAddress){
         Owner = msg.sender;
+        PriceFeed = AggregatorV3Interface(PriceFeedAddress);
     }
 
     function ReceiveFunds() public payable IfSufficientFundAmount{
