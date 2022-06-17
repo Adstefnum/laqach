@@ -11,7 +11,7 @@ contract EthToUSDConverter is AbstractPriceConverter{
     }
     function ConvertCryptoToUSD(uint256 CryptoAmount,AggregatorV3Interface PriceFeed) public override view returns(uint256)  {
         uint256 EthPrice = GetCryptoPrice(PriceFeed);
-        uint256 EthAmountInUSD = (CryptoAmount*EthPrice) / 10e18;
+        uint256 EthAmountInUSD = (CryptoAmount*EthPrice) / 10e18s;
         return EthAmountInUSD;
     }
 }
