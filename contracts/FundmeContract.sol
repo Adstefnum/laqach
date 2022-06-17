@@ -4,6 +4,7 @@ pragma solidity ^0.8.7;
 
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+import "./mocks/mock_EthToUSDConverter.sol";
 import "./EthToUSDConverter.sol";
 
  error NotOwner();
@@ -40,6 +41,10 @@ contract FundMe{
         Funders = new address[](0);
         (bool Success,)  = Owner.call{value:address(this).balance}("");
         require(Success);
+    }
+
+    function GetAccountBalance() public view OnlyOwner returns(uint256){
+        return address(this).balance;
     }
 
     receive() external payable{
