@@ -4,7 +4,7 @@ pragma solidity ^0.8.7;
 
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
-import "./ConverterFactory.sol";
+import "./EthToUSDConverter.sol";
 
  error NotOwner();
  error InsufficientFundAmount();
@@ -17,6 +17,7 @@ contract FundMe{
    address immutable private Owner;
 
    AggregatorV3Interface private PriceFeed;
+   EthToUSDConverter PriceConverter = new EthToUSDConverter();
 
    mapping(address=>uint256) AddressToFundedAmount;
    address[] Funders;
@@ -59,7 +60,6 @@ contract FundMe{
     }
 
     modifier IfSufficientFundAmount{
-        CryptoConverterFactory PriceConverter = new CryptoConverterFactory().CreateConverter(CurrentCryptoCurrency);
         if(PriceConverter.ConvertCryptoToUSD(msg.value,PriceFeed)!=MinimumUSDFundAmount) revert InsufficientFundAmount();
         _;
     }
